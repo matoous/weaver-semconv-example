@@ -1,0 +1,20 @@
+[project]
+name = "weaver-semconv-example"
+version = "0.1.0"
+description = "Weaver Semantic Conventions python SDK example"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["semantic-conventions", "otel", "observability"]
+dependencies = [
+    "opentelemetry-api>=1.35.0",
+    "ruff>=0.12.3",
+    "typing>=3.10.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/matoous/weaver-semconv-example"
+Issues = "https://github.com/matoous/weaver-semconv-example/issues"
+"Source Code" = "https://github.com/matoous/weaver-semconv-example"
+
+[tool.ruff]
+line-length = 100

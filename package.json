@@ -1,0 +1,55 @@
+{
+	"name": "@matoous/weaver-semconv-example",
+	"version": "0.1.0",
+	"description": "Weaver Semantic Conventions JavaScript SDK example",
+	"keywords": [
+		"semantic-conventions",
+		"otel",
+		"observability"
+	],
+	"homepage": "https://github.com/matoous/weaver-semconv-example#readme",
+	"bugs": {
+		"url": "https://github.com/matoous/weaver-semconv-example/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/matoous/weaver-semconv-example.git"
+	},
+	"license": "UNLICENSED",
+	"author": "",
+	"scripts": {
+		"prebuild": "npm run lint:fix",
+		"build": "rslib build",
+		"build:watch": "rslib build --watch",
+		"inspect": "rslib inspect",
+		"tsc": "tsc",
+		"prerelease": "npm run build",
+		"lint": "biome check",
+		"lint:fix": "biome check --write"
+	},
+	"type": "module",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"publishConfig": {
+		"provenance": true,
+		"access": "public"
+	},
+	"main": "./dist/index.cjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"require": "./dist/index.cjs",
+		"default": "./dist/index.js"
+	},
+	"devDependencies": {
+		"@rslib/core": "^0.10.5",
+		"rsbuild-plugin-dts": "^0.10.5",
+		"rsbuild-plugin-publint": "^0.3.2",
+		"typescript": "^5.8.3"
+	}
+}

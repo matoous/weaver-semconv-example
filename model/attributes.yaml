@@ -1,0 +1,34 @@
+imports: # import signals from the dependency registry, i.e. OTel semantic conventions
+  events:
+    - app.*
+    - exception # import the event named `exception`
+  entities:
+    - host
+    - host.cpu
+
+groups:
+  - id: registry.acme
+    type: attribute_group
+    display_name: Acme
+    brief: Acme-specific observability attributes.
+    attributes:
+      - id: acme.product.id
+        type: string
+        brief: Unique identifier of an Acme corp product.
+        stability: stable
+        requirement_level: required
+        examples:
+          - "my_product_id"
+          - "1234"
+
+  - id: registry.oauth2
+    type: attribute_group
+    display_name: OAuth 2.0
+    brief: OAuth 2.0 observability attributes.
+    attributes:
+      - id: oauth2.client.id
+        type: string
+        brief: 'Unique identifier of the OAuth 2.0 client.'
+        stability: stable
+        examples:
+          - "example_client_id"

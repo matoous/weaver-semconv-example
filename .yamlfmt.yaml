@@ -1,0 +1,6 @@
+formatter:
+  type: basic
+  retain_line_breaks_single: true
+  disallow_anchors: true
+  trim_trailing_whitespace: true
+  force_array_style: block
