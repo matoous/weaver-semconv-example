@@ -47,7 +47,7 @@
 		"default": "./dist/index.js"
 	},
 	"devDependencies": {
-		"@rslib/core": "^0.10.5",
+		"@rslib/core": "^0.10.6",
 		"rsbuild-plugin-dts": "^0.10.5",
 		"rsbuild-plugin-publint": "^0.3.2",
 		"typescript": "^5.8.3"
